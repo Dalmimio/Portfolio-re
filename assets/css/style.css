@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lavishly+Yours&display=swap');
+
+/* - - - - - - - - - - Variables - - - - - - - - - - */
+:root {
+    --font-cursive:'Lavishly Yours', cursive;
+    --font-semi-bold:'Inter', sans-serif;
+    --color-shadow-tittle: #cccccc80;
+    --color-principal-text: rgb(136, 255, 0);
+    --color-principal: #cdb4db;
+    --tittle-size: 4rem;
+    --background-color: black;
+    --text-color:white;
+    --text-color-dark:black;
+  }
+
+
+
+/* - - - - - - - - - - Generales - - - - - - - - - - */
+body{    
+    background-color: var(--background-color);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-semi-bold);
+    color: var(--text-color);
+}
+section{
+    border: solid 1px;
+    min-height: 100vh;
+    margin: 2rem 0;
+}
+.icon__button{
+    color: var(--text-color-dark);
+    font-size: 1.5rem;
+}
+
+.button{
+    margin: 1rem;
+    padding: .5rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 3rem;
+    border: var(--color-principal) solid 1px;
+    color: var(--text-color-dark);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.tittle{
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;    
+}
+.tittle h2{
+    font-family: var(--font-semi-bold);
+    font-size: var(--tittle-size);
+    color: var(--color-shadow-tittle);
+    position: relative;
+}
+.tittle p{
+    font-family: var(--font-cursive);
+    font-size: var(--tittle-size);
+    color: var(--color-principal-text);
+    position: absolute;
+}
+
+/* - - - - - - - - - - Home - - - - - - - - - - */
+#id__home{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.div__home{
+    width: 40%;
+    margin: 1rem; 
+    display: flex;
+}
+
+
+.presentacion span{
+    display: block;
+    color: rgb(165, 127, 255);
+}
+.presentacion h1{
+    font-size: 3rem;
+    margin: 1rem;
+}
+.presentacion p{
+    font-size: 1.2rem;
+    text-align: right;
+}
+.div__home img{
+    width: 100%;
+    display: flex;
+}
+.redes__sociales{
+    padding: 1rem;
+    margin: 1.5rem;
+}
+.redes__sociales div{
+    display: flex;
+    align-content: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+
+/* - - - - - - - - - - About - - - - - - - - - - */
+
+#id__about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about__me{
+    width: 90%;
+}
+.about__me div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about__me p{
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.about__me button{
+    margin: 1rem;
+}
+.about__me img{
+    width:100%
+}
+
+/* - - - - - - - - - - Skills - - - - - - - - - - */
+#id__skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hard__skills{
+    margin-top: 3rem;
+    width: 90%;
+}
+.tittle__skills{
+    display: block;
+    margin-top: 5rem;
+    text-align: center;    
+}
+
+.tittle__skills h3{
+    color: var(--color-shadow-tittle);
+    font-family: var(--font-semi-bold);
+    font-size: 2rem;
+}
+
+.hard__skills article{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.137);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.skills_tipe img{
+    width: 100%;
+}
+.icon__soft{
+    font-size: 2rem;
+    color: var(--color-principal);
+}
+
+
+/* - - - - - - - - - - Educacion - - - - - - - - - - */
+
+#id__educacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.educacion{
+    width: 90%;
+}
+
+.item__educacion{
+    margin: 1rem;
+    width: 45%;
+    box-shadow: var(--color-principal-text) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.tittle_ed{
+    font-size: 1rem;
+    margin: 0;
+    text-align: right;
+}
+
+.instituto_ed, .fecha_ed{
+    text-align: left;
+    color: var(--color-shadow-tittle);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* - - - - - - - - - - Portfolio - - - - - - - - - - */
+
+#id__portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+.img__portfolio{
+    width: 30%;
+}
