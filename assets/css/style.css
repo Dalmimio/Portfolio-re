@@ -8,7 +8,7 @@
     --color-principal-text: rgb(165, 127, 255);
     --color-principal: #cdb4db;
     --tittle-size: 4rem;
-    --background-color: black;
+    --background-color: rgb(0, 0, 0);
     --text-color:white;
     --text-color-dark:black;
   }
@@ -39,18 +39,17 @@ section{
     margin: 2rem 0;
 }
 .icon__button{
-    color: var(--text-color-dark);
+    color: var(--text-color);
     font-size: 1.5rem;
 }
 
-.button{
+.button-a, button{
     margin: 1rem;
     padding: .5rem;
-    width: 10rem;
+    width: 12rem;
     height: 4rem;
     border-radius: 3rem;
     border: var(--color-principal) solid 1px;
-    color: var(--text-color-dark);
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -58,10 +57,38 @@ section{
     justify-content: center;
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
+
+/* Neon btn */
+.btn-neon {
+    border: 2px solid var(--color-principal);
+    background-color: rgba(70, 70, 70, 0.25);
+    box-shadow: none;
+    color: #565656;
+    text-shadow: 0 0 0px transparent;
+    transition: .2s;
+    -webkit-transition: .5s;
+    line-height: 40px;
+    margin: 0;
+    border-radius: 2rem;
+    cursor: pointer
+}
+.btn-neon:hover {
+   border: 2px solid #d615c6;
+   color: #d615c6;
+   text-shadow: 0 0 4px #d615c6;
+   box-shadow: inset 0 0 6px #d615c6,  0 0 6px #d615c6;
+}
+
+
+
 .tittle{
     text-align: center;
     display: inline-flex;
     justify-content: center;
+    margin: 3rem 0;
 }
 .tittle h2{
     font-family: var(--font-semi-bold);
@@ -119,9 +146,12 @@ section{
     justify-content: center;
     font-size: 2rem;
     margin: 5px;
-
+    color: var(--color-principal);
+    transition: .5s;
 }
-
+.icon:hover{
+    filter: drop-shadow(#bb004b -5px -5px 3px);
+}
 
 /* - - - - - - - - - - About - - - - - - - - - - */
 
@@ -191,11 +221,19 @@ section{
     padding: 1.5rem;
     border-radius: 1rem;
 }
+
+.skills_tipe {
+    gap: 10px;
+}
 .skills_tipe img{
     width: 100%;
 }
-.skills_tipe {
-    gap: 10px;
+
+.skills_tipe:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(165, 127, 255, 0.24) 0px 3px 8px;
+    transition: .3s;
+
 }
 .icon__soft{
     font-size: 2rem;
@@ -254,9 +292,14 @@ section{
     height: auto;
     text-align: center;
     border-radius: 1rem;
-    box-shadow: var(--color-principal-text) 0px 4px 8px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    
+   box-shadow: var(--color-principal-text) 0px 4px 8px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+
+.item__portfolio:hover{
+    transition: .3s;
+    box-shadow: #bb004b 0px 4px 8px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 .tittle__portfolio, .descripcion__portfolio{
     padding: .5rem;
     font-family: var(--font-semi-bold);
@@ -330,7 +373,11 @@ input, textarea{
 }
 .contact__other a{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--color-principal);
+    transition: .3s;
+}
+.contact__other a:hover{
+    filter: drop-shadow(#bb004b -2px -2px 2px);
 }
 .contact__other p{
     text-indent: 3rem;
@@ -339,3 +386,11 @@ input, textarea{
     font-size: 2rem;
     margin: 5px;
 }
+form button{
+    width: 8rem;
+}
+
+
+
+
+
