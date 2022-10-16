@@ -336,24 +336,26 @@
             <div class="contact__container d-inline-flex justify-content-center align-items-center flex-wrap">
                 <div class="formulario">
 
-                    <form action="">
+                    <form action="https://formsubmit.co/fcf352a61d465aa630464a7159e0d4e3" method="POST">
                         <div class="header__form">
 
-                            <input name="name" type="text" placeholder="nombre" id="name">
+                            <input name="name" type="text" placeholder="nombre" id="name" required>
 
                             <input name="asunto" type="text" placeholder="asunto" id="asunto">
                         </div>
 
-                        <input name="mail" type="mail" placeholder="mimail@mail.com" id="mail">
+                        <input name="mail" type="mail" placeholder="mimail@mail.com" id="mail" required>
 
                         <textarea name="mensaje" placeholder="tu mensaje aquí..." id="mensaje" type="text" cols="0"
-                            rows="7"></textarea>
+                            rows="7" required></textarea>
 
                         <div class="d-flex justify-content-around">
                             <button type="submit" class="button-a btn-neon btn-contact">Enviar</button>
 
                             <button type="reset" class="button-a btn-neon btn-contact">Borrar</button>
                         </div>
+                        <!-- <input type="hidden" name="_next" value=""> -->
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
 
                 </div>
