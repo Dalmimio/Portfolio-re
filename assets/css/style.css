@@ -629,7 +629,9 @@ form button{
     #id__home div{
         width: 90%;
     }
-   
+    .contact__other {
+        width: 90%;
+    }
     
     .redes__sociales{
         width: auto;
