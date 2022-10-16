@@ -151,6 +151,8 @@ nav{
     margin: 1rem; 
     display: flex;
     align-content: center;
+    justify-content: center;
+    
 }
 
 
@@ -180,12 +182,7 @@ nav{
     color: var(--color-principal-text);
     text-shadow: none;
 }
-/* @keyframes typing{
-    from { width: 0; }
-}
-@keyframes blink{
-    50%{ border-color: transparent;}
-} */
+
 
 .presentacion h1{
     font-size: 3rem;
@@ -196,7 +193,7 @@ nav{
     text-align: right;
 }
 .div__home img{
-    width: 100%;
+    width: 300px;
     display: flex;
 }
 .redes__sociales{
@@ -657,7 +654,7 @@ input, textarea{
         width: 80%;
     }
     .div__home img{
-        width: 100%;
+        width: 50%;
     }
 
     form input, textarea {
