@@ -388,8 +388,8 @@ color: black !important;
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 350px;
+    width: 250px !important;
+    height: 350px !important;
   }
   
   .flip-card-inner {
@@ -454,8 +454,9 @@ input, textarea{
     margin: .5rem;
     width: 94%;
     border-radius: 1rem;
-    border: solid var(--color-principal-text) 1px;
-    background-color: rgba(255, 255, 255, 0.089);
+    border: none;
+    border-bottom: solid var(--color-principal-text) 1px;
+    background-color: rgba(255, 255, 255, 0.02);
     font-family: var(--font-semi-bold);
 }
 
@@ -549,16 +550,7 @@ form button{
             font-size: 1rem;
         }
 }
-/* // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
+/* Extra large devices (large desktops, 1200px and up) 
 @media (min-width: 1200px) { ... } */
 
 @media screen and  (max-width: 850px){
@@ -581,7 +573,7 @@ form button{
         width: 100% !important;
     }
     .accordion{
-        width: 100%;
+        width: 90%;
     }
     
      .contact__container {
