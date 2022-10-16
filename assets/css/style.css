@@ -27,6 +27,10 @@
 body{    
     background-color: var(--background-color);
 }
+
+::selection{
+    background-color: #BB004B !important;
+}
 *{
     padding: 0;
     margin: 0;
@@ -35,7 +39,7 @@ body{
     color: var(--text-color);
 }
 section{
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 2rem 0;
 }
 .icon__button{
@@ -43,12 +47,11 @@ section{
     font-size: 1.5rem;
 }
 
-.button-a, button{
-    margin: 1rem;
-    padding: .5rem;
-    width: 12rem;
-    height: 4rem;
-    border-radius: 3rem;
+.button-a{
+    
+    padding: .5rem 2rem;
+    width: auto;
+    height: auto;
     border: var(--color-principal) solid 1px;
     text-align: center;
     display: flex;
@@ -113,6 +116,7 @@ a{
     width: 40%;
     margin: 1rem; 
     display: flex;
+    align-content: center;
 }
 
 
@@ -162,8 +166,8 @@ a{
     display: flex;
 }
 .redes__sociales{
-    padding: 1rem;
     margin: 1.5rem;
+    width: 100% !important;
 }
 .redes__sociales div{
     display: flex;
@@ -229,15 +233,24 @@ a{
     width: 90%;
 }
 .tittle__skills{
-    display: block;
     margin-top: 5rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
     text-align: center;    
+}
+.tittle__skills .icon__button{
+    color: #BB004B;
+    font-size: 2.5rem;
 }
 
 .tittle__skills h3{
     color: var(--color-shadow-tittle);
     font-family: var(--font-semi-bold);
     font-size: 2rem;
+    margin-left: 1rem;
 }
 
 .hard__skills article{
@@ -269,7 +282,24 @@ a{
     font-size: 2rem;
     color: var(--color-principal);
 }
-
+.accordion-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--color-principal);
+    border-radius: 1rem;
+    transition: .5s;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.accordion{
+    width: 45%;
+}
 
 /* - - - - - - - - - - Educacion - - - - - - - - - - */
 
@@ -318,7 +348,9 @@ a{
 }
 
 
-
+.btn-port{
+    border-bottom: 1px solid var(--color-principal-text) ;
+}
 .btn-port:hover{
 background-color: var(--color-principal-text) !important;
 color: black !important;
@@ -332,7 +364,7 @@ color: black !important;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: .5rem .5rem 0rem 0rem;
+    border-radius: .5rem;
 }
 
 .tittle__portfolio, .descripcion__portfolio{
@@ -406,7 +438,6 @@ color: black !important;
 }
 .contact__container{
     width: 90%;
-    height: 100vh;
 }
 .formulario{
     width: 40%;
@@ -463,10 +494,166 @@ form button{
 }
 
 
+/* ------------------ MEDIA QUERYS --------------------- */
+@media screen and (max-width: 1000px){
+    .presentacion h1 {
+        font-size: 2rem;
+    }
+    .presentacion p {
+        font-size: 1rem;
+    }
 
+        .button-a, button {
+            width: auto;
+            height: auto;
+            font-size: 1rem;
+        }
+        .redes__sociales {
+            width: 100% !important;
+        }
 
+        .tittle h2{
+            font-size: 3rem;
+        }
+        .tittle p{
+            font-size: 3rem;
+        }
 
+        .about__me p{
+            font-size: 1rem;
+        }
 
+        .flip-card {
+            width: 200px;
+            height: 300px;
+        }
+        .tittle__portfolio{
+            font: 1rem;
+        } 
+        .descripcion__portfolio {
+            font-size: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+        .btn-port {
+            width: auto;
+            margin: 0;
+        }
+        .header__form input {
+            width: 94%;
+        }
+        .contact {
+            font-size: 1rem;
+        }
+        .contact__other {
+            font-size: 1rem;
+        }
+}
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+@media screen and  (max-width: 850px){
+    .button-a{
+        padding: .5rem;
+        width: 200px;
+    }
+    .about__me {
+        flex-direction: column;
+    }
+
+    .about__me p{
+        width: 100%;
+    }
+    .item__educacion {
+        width: 40rem;
+    }
+    
+    .div__home p{
+        width: 100% !important;
+    }
+    .accordion{
+        width: 100%;
+    }
+    
+     .contact__container {
+        flex-direction: column-reverse;
+    }
+    .contact {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact .redes__sociales {
+        width: 80%;
+    }
+
+    .formulario{
+        width: 70%;
+    }
+
+}
+
+@media screen and  (max-width: 750px){
+    #id__home{
+        flex-direction: column-reverse;
+    }
+    #id__home div{
+        width: 80%;
+    }
+    .div__home img{
+        width: 100%;
+    }
+
+    form input, textarea {
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+    .formulario .button{
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+    
+}
+@media screen and  (max-width: 600px){
+    
+    #id__home div{
+        width: 90%;
+    }
+   
+    
+    .redes__sociales{
+        width: auto;
+        margin: 0;
+    }
+
+    .about__me {
+        width: 100%;
+    }
+    .about__me div {
+        width: 90%;
+    }
+    .formulario{
+        width: 85%;
+    }
+    .contact__container {
+        width: 100% !important;
+    }
+    .contact{
+        margin-bottom: 2rem;
+    }
+    .text__contact {
+        width: 85%;
+    }
+}
 
 

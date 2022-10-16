@@ -22,8 +22,9 @@
     <main>
 
         <!-- ------------------    HOME    ------------------ -->
-        <section id="id__home">
-            <div class="div__home presentacion d-inline-flex align-content-center flex-column justify-content-center">
+        <section id="id__home" class="d-flex flex-wrap align-items-center">
+            <div
+                class="div__home presentacion d-inline-flex align-content-center flex-column justify-content-center flex-wrap">
                 <h1>I'm Dalila</Dalila><span>
                         Frontend developer
                     </span></h1>
@@ -32,9 +33,8 @@
                     and easy-to-use experiences. I am passionate about learning and developing my knowledge in web
                     development and providing solutions
                 </p>
-                <div
-                    class="redes__sociales d-inline-flex flex-row-reverse justify-content-between align-content-center">
-                    <div>
+                <div class="redes__sociales d-flex flex-row-reverse justify-content-between align-content-center">
+                    <div class="d-flex justify-content-evenly">
                         <a class="icon" target="_blank" href="https://github.com/Dalmimio"><i
                                 class="uil uil-github-alt"></i></a>
 
@@ -45,7 +45,7 @@
                                 class="uil uil-facebook-f"></i></a>
                     </div>
 
-                    <a href="#id__about" class="button-a btn-neon text-light">More about me <i
+                    <a href="#id__about" class="button-a btn-neon text-light">About me <i
                             class="icon__button uil uil-arrow-right"></i></a>
 
                 </div>
@@ -93,105 +93,127 @@
                 <p>skills</p>
             </div>
 
-            <div class="container__skills d-flex flex-column">
+            <div class="container__skills d-flex flex-row justify-content-around flex-wrap">
 
-                <div class="d-flex flex-wrap flex-column justify-content-center">
-                    <div class="tittle__skills">
-                        <h3>Hard</h3>
-                    </div>
+                <div class="accordion" id="accordionExample">
+                    <div class=" w-100">
+                        <h2 class="accordion-header text-center" id="headingOne">
+                            <button class="accordion-btn bg-transparent" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="tittle__skills ">
+                                    <i class="uil uil-keyboard icon__button"></i>
+                                    <h3>Hard</h3>
+                                    
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
 
 
-                    <div class="hard__skills d-flex flex-wrap justify-content-center">
+                            <div class="hard__skills d-flex flex-wrap justify-content-center">
 
-                        <article class="skills_tipe">
-                            <h6>HTML</h6>
-                            <img src="assets/img/html.png" alt="HTML">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>CSS</h6>
-                            <img src="assets/img/css.png" alt="CSS">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>JAVASCRIPT</h6>
-                            <img src="assets/img/js.png" alt="JS">
-                        </article>
-                        <!-- <article class="skills_tipe">
-                            <h6>JAVA</h6>
-                            <img src="assets/img/java.png" alt="JAVA">
-                        </article> -->
-                        <article class="skills_tipe">
-                            <h6>MY SQL</h6>
-                            <img src="assets/img/sql.png" alt="SQL">
-                        </article>
-                        <!-- <article class="skills_tipe">
-                            <h6>SPRING BOOT</h6>
-                            <img src="assets/img/spring.png" alt="SPRING BOOT">
-                        </article> -->
-                        <article class="skills_tipe">
-                            <h6>BOOTSTRAP</h6>
-                            <img src="assets/img/boot.png" alt="BOOTSTRAP">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>ANGULAR</h6>
-                            <img src="assets/img/angular-logo-vector.svg" alt="ANGULAR">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>GITHUB</h6>
-                            <img src="assets/img/github-octocat-logo-vector.svg" alt="GITHUB">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>GIT</h6>
-                            <img src="assets/img/git-logo.png" alt="GIT">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>PHOTOSHOP</h6>
-                            <img src="assets/img/photoshop-cc-logo-vector.svg" alt="PHOTOSHOP">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>SPARK AR</h6>
-                            <img src="assets/img/sparkar.png" alt="SPARK AR">
-                        </article>
+                                <article class="skills_tipe">
+                                    <h6>HTML</h6>
+                                    <img src="assets/img/html.png" alt="HTML">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>CSS</h6>
+                                    <img src="assets/img/css.png" alt="CSS">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>JAVASCRIPT</h6>
+                                    <img src="assets/img/js.png" alt="JS">
+                                </article>
+
+                                <article class="skills_tipe">
+                                    <h6>MY SQL</h6>
+                                    <img src="assets/img/sql.png" alt="SQL">
+                                </article>
+
+                                <article class="skills_tipe">
+                                    <h6>BOOTSTRAP</h6>
+                                    <img src="assets/img/boot.png" alt="BOOTSTRAP">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>ANGULAR</h6>
+                                    <img src="assets/img/angular-logo-vector.svg" alt="ANGULAR">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>GITHUB</h6>
+                                    <img src="assets/img/github-octocat-logo-vector.svg" alt="GITHUB">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>GIT</h6>
+                                    <img src="assets/img/git-logo.png" alt="GIT">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>PHOTOSHOP</h6>
+                                    <img src="assets/img/photoshop-cc-logo-vector.svg" alt="PHOTOSHOP">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>SPARK AR</h6>
+                                    <img src="assets/img/sparkar.png" alt="SPARK AR">
+                                </article>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="d-flex flex-wrap flex-column justify-content-center">
-                    <div class="tittle__skills">
-                        <h3>Soft</h3>
-                    </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-btn collapsed bg-transparent" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+
+                                <div class="tittle__skills">
+                                    <i class="uil uil-head-side icon__button"></i>
+                                    <h3>Soft</h3>
+                                </div>
+
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
 
 
-                    <div class="hard__skills d-flex flex-wrap justify-content-center">
+                            <div class="hard__skills d-flex flex-wrap justify-content-center">
 
 
 
-                        <article class="skills_tipe">
-                            <h6>Trabajo en equipo</h6>
-                            <img src="assets/img/equipo.png" alt="" class="icon">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>Flexibilidad</h6>
-                            <img src="assets/img/flexible.png" alt="" class="icon">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>Empatía</h6>
-                            <img src="assets/img/empatia.png" alt="" class="icon">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>Adaptabilidad</h6>
-                            <img src="assets/img/adaptable.png" alt="" class="icon">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>Resolución de conflictos</h6>
-                            <img src="assets/img/conflictos.png" alt="" class="icon">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>Escucha activa</h6>
-                            <img src="assets/img/escucha.png" alt="" class="icon">
-                        </article>
-                        <article class="skills_tipe">
-                            <h6>Resiliencia</h6>
-                            <img src="assets/img/resiliencia.png" alt="" class="icon">
-                        </article>
+                                <article class="skills_tipe">
+                                    <h6>Trabajo en equipo</h6>
+                                    <img src="assets/img/equipo.png" alt="" class="icon">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>Flexibilidad</h6>
+                                    <img src="assets/img/flexible.png" alt="" class="icon">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>Empatía</h6>
+                                    <img src="assets/img/empatia.png" alt="" class="icon">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>Adaptabilidad</h6>
+                                    <img src="assets/img/adaptable.png" alt="" class="icon">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>Resolución de conflictos</h6>
+                                    <img src="assets/img/conflictos.png" alt="" class="icon">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>Escucha activa</h6>
+                                    <img src="assets/img/escucha.png" alt="" class="icon">
+                                </article>
+                                <article class="skills_tipe">
+                                    <h6>Resiliencia</h6>
+                                    <img src="assets/img/resiliencia.png" alt="" class="icon">
+                                </article>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
 
@@ -255,14 +277,14 @@
                                 <img src="assets/img/logoAmazingEvents.png" alt="" class="img__portfolio">
                             </div>
                         </div>
-                
-                        <div class="flip-card-back">
+
+                        <div class="flip-card-back d-flex flex-column align-content-center justify-content-between">
                             <h4 class="tittle__portfolio">Amazing Events</h4>
-                            <p>HTML - CSS - JS</p>
-                            <p class="descripcion__portfolio">Página web dinamica y responsiva, con filtros (de busqueda y
-                                checkboxes) funcionales, posee una arquitectura web MPA (Multi Page Application).</p>
+                            <p class="descripcion__portfolio">HTML - CSS - JS</p>
+                            <p class="descripcion__portfolio">Página web dinamica y responsiva, con filtros funcionales
+                                y faciles de usar.</p>
                             <a href="https://amazingeventsdalmimio.netlify.app/" target="_blank"><button
-                                    class="btn bg-danger text-light btn-port">Demo</button></a>
+                                    class="btn text-light btn-port">Demo</button></a>
                         </div>
                     </div>
                 </div>
@@ -270,16 +292,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="assets/img/hockey1.jpg" alt="" class="img__portfolio" >
+                            <img src="assets/img/hockey1.jpg" alt="" class="img__portfolio">
                         </div>
-                
-                        <div class="flip-card-back">
+
+                        <div class="flip-card-back d-flex flex-column align-content-center justify-content-between">
                             <h4 class="tittle__portfolio">Mighty Ducks Hockey League</h4>
-                            <p>HTML - CSS - JS</p>
-                            <p>Página web estática y responsive, intuitiva y fácil de usar, posee una arquitectura web MPA
-                                (Multi Page Application).</p>
+                            <p class="descripcion__portfolio">HTML - CSS - JS</p>
+                            <p class="descripcion__portfolio">Página web estática y responsive, intuitiva y fácil de
+                                usar.</p>
                             <a href="https://mightyduckshockeyleaguedalmi.netlify.app/" target="_blank"><button
-                                    class="btn bg-danger text-light btn-port">Demo</button></a>
+                                    class="btn text-light btn-port">Demo</button></a>
                         </div>
                     </div>
                 </div>
@@ -289,13 +311,13 @@
                         <div class="flip-card-front">
                             <img src="assets/img/contador.png" alt="" class="img__portfolio">
                         </div>
-                
-                        <div class="flip-card-back d-flex justify-content-center flex-column align-content-center">
+
+                        <div class="flip-card-back d-flex flex-column align-content-center justify-content-between">
                             <h4 class="tittle__portfolio">Contador</h4>
-                            <p>HTML - CSS - JS</p>
+                            <p class="descripcion__portfolio">HTML - CSS - JS</p>
                             <p class="descripcion__portfolio">Página web que cuenta palabras y caracteres.</p>
                             <a href="https://mightyduckshockeyleaguedalmi.netlify.app/" target="_blank"><button
-                                    class="align-self-center btn bg-danger text-light btn-port">Demo</button></a>
+                                    class="btn  text-light btn-port">Demo</button></a>
                         </div>
                     </div>
                 </div>
@@ -311,7 +333,7 @@
                 <p>contacto</p>
             </div>
 
-            <div class="contact__container d-flex justify-content-center align-items-center">
+            <div class="contact__container d-inline-flex justify-content-center align-items-center flex-wrap">
                 <div class="formulario">
 
                     <form action="">
@@ -328,9 +350,9 @@
                             rows="7"></textarea>
 
                         <div class="d-flex justify-content-around">
-                            <button type="submit" class="button btn-neon">Enviar</button>
+                            <button type="submit" class="button btn-neon btn-contact">Enviar</button>
 
-                            <button type="reset" class="button btn-neon">Borrar</button>
+                            <button type="reset" class="button btn-neon btn-contact">Borrar</button>
                         </div>
                     </form>
 
