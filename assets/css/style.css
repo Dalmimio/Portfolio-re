@@ -497,7 +497,20 @@ input, textarea{
 }
 
 
+/* - - - - - - - - - - Thanks - - - - - - - - - - */
 
+.thanks{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.img_thanks{
+    width: 48%;
+}
+.txt__th{
+    width: 40%;
+}
 /* ------------------ MEDIA QUERYS --------------------- */
 @media screen and (max-width: 1000px){
     .presentacion h1 {
@@ -622,6 +635,16 @@ input, textarea{
         height: auto;
         padding: 10px 20px;
     }
+    .thanks{
+display: flex;
+flex-direction: column-reverse;
+    }
+    .img_thanks{
+        width: 60%;
+    }
+    .txt__th{
+        width: 80%;
+    }
     
 }
 @media screen and  (max-width: 600px){
@@ -655,6 +678,10 @@ input, textarea{
     }
     .text__contact {
         width: 85%;
+    }
+    
+    .txt__th h2{
+        font-size: 1rem;
     }
 }
 
