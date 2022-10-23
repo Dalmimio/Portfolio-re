@@ -570,6 +570,17 @@ input, textarea{
 .txt__th{
     width: 40%;
 }
+
+/* - - - - - - - - - - Footer - - - - - - - - - - */
+footer{
+    min-height: 10vh;
+}
+footer p{
+    font-size: 1rem;
+}
+footer p span{
+    font-size: 1.5rem;
+}
 /* ------------------ MEDIA QUERYS --------------------- */
 @media screen and (max-width: 1000px){
     .presentacion h1 {
