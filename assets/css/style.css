@@ -292,7 +292,6 @@ nav:nth-child(1){
     width: 90%;
 }
 .tittle__skills{
-    margin-top: 5rem;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -688,6 +687,7 @@ footer p span{
 @media screen and  (max-width: 750px){
     #id__home{
         flex-direction: column-reverse;
+        margin-top: 4rem;
     }
     #id__home div{
         width: 80%;
